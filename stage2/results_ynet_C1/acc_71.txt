@@ -1,0 +1,15 @@
+
+Epoch: 71	 Overall Acc (Tr): 0.4845	 Overall Acc (Val): 0.4859	 mIOU (Tr): 0.3007	 mIOU (Val): 0.3032
+Per Class Training Acc: [0.49168664 0.         0.49612024 0.4978741  0.46121848 0.48367688
+ 0.03688142 0.        ]
+Per Class Validation Acc: [0.49210146 0.         0.4955987  0.49788758 0.46574828 0.48525873
+ 0.04985889 0.        ]
+Per Class Training mIOU: [0.48805177 0.         0.45426223 0.49409902 0.4577768  0.47515655
+ 0.03664193 0.        ]
+Per Class Validation mIOU: [0.48849618 0.         0.45861918 0.49421564 0.46212232 0.47410753
+ 0.04792044 0.        ]Classification Results
+Epoch: 71	 Overall Acc (Tr): 0.5000	 Overall Acc (Val): 0.5000	 mIOU (Tr): 0.1000	 mIOU (Val): 0.1000
+Per Class Training Acc: [0.5 0.  0.  0.  0. ]
+Per Class Validation Acc: [0.5 0.  0.  0.  0. ]
+Per Class Training mIOU: [0.5 0.  0.  0.  0. ]
+Per Class Validation mIOU: [0.5 0.  0.  0.  0. ]
