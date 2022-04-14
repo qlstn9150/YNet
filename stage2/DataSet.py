@@ -21,9 +21,13 @@ class MyDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         image_name = self.imList[idx]
         label_name = self.labelList[idx]
+
         image = cv2.imread(image_name)
         label = cv2.imread(label_name, 0)
+
         label2 = self.diagList[idx]
+
         if self.transform:
             [image, label, label2] = self.transform(image, label, label2)
+
         return (image, label, label2)

@@ -129,12 +129,15 @@ def save_checkpoint(state, filenameCheckpoint='checkpoint.pth.tar'):
 
 def trainValidateSegmentation(args):
     # 사전 학습 데이터 불러오기
+    # data 변수 생성
     # check if processed data file exists or not
     if not os.path.isfile(args.cached_data_file):
         dataLoader = ld.LoadData(args.data_dir, args.classes, args.diagClasses, args.cached_data_file)
+
         if dataLoader == None:
             print('Error while caching the data. Please check')
             exit(-1)
+
         data = dataLoader.processData()
     else:
         data = pickle.load(open(args.cached_data_file, "rb"))
